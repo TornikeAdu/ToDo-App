@@ -1,0 +1,15 @@
+.Search {
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  gap: 16px;
+}
+
+@media (max-width: 760px) {
+  .Search {
+    margin-inline: 5px;
+  }
+}

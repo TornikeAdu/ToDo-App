@@ -1,0 +1,19 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.todo-list-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 90vh;
+  margin-inline: calc((750px - 600px) / 2);
+}
+
+table {
+  border-collapse: collapse;
+}

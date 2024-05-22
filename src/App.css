@@ -1,0 +1,127 @@
+.App {
+  text-align: center;
+  background-color: var(--bcolor);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  color: var(--fcolor);
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  height: 710px;
+  width: 750px;
+}
+
+.add-button {
+  position: relative;
+  height: 100%;
+}
+
+.add-button > .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
+  width: 500px;
+  height: 300px;
+  background-color: var(--bcolor);
+  font-size: 12px;
+}
+.modal > .header {
+  font-family: inherit;
+  font-weight: 500;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px;
+  color: var(--fcolor);
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 5px;
+  margin-top: auto;
+  text-align: center;
+}
+
+.modal input {
+  background-color: var(--bcolor);
+  color: var(--fcolor);
+  font-size: 16px;
+  font-weight: 500;
+  outline: 0px;
+  border: 1px solid var(--maincolor);
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-top: 30px;
+}
+
+.actions > .button {
+  text-transform: uppercase;
+  background-color: var(--maincolor);
+  color: white;
+  outline: 0;
+  width: 97px;
+  height: 38px;
+  border-radius: 5px;
+  border: 1px solid var(--maincolor);
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.actions > .button:first-child {
+  background-color: var(--bcolor);
+  color: var(--maincolor);
+}
+
+.popup-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: var(--bcolor);
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.popup-arrow {
+  color: var(--fcolor);
+}
+[role='tooltip'].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].popup-overlay {
+  background: transparent;
+}
+
+@media (max-height: 667px) {
+  .add-button > .btn {
+    bottom: 65px;
+  }
+}

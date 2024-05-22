@@ -1,0 +1,15 @@
+.Darkmode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Darkmode button {
+  width: 36px;
+  height: 36px;
+  background-color: var(--maincolor);
+  border-style: solid;
+  border-color: var(--maincolor);
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,109 @@
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todo-item > .text {
+  display: flex;
+  font-size: large;
+  font-weight: 500;
+  width: 100%;
+  text-wrap: balance;
+}
+
+.todo-item button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin: 0px;
+  padding: 0px;
+}
+
+.notCompleted {
+  color: var(--fcolor);
+  text-decoration: none;
+}
+
+.completed {
+  color: #888;
+  text-decoration: line-through;
+}
+
+tr {
+  border: solid;
+  border-width: 1px 0;
+  border-color: var(--maincolor);
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: var(--bcolor);
+  border: 1px var(--maincolor) solid;
+  border-radius: 2px;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: var(--maincolorfade);
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--maincolor);
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 7px;
+  top: 4px;
+  width: 6px;
+  height: 9px;
+  border: solid;
+  border-color: white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  transform: rotate(35deg);
+}

@@ -1,0 +1,27 @@
+.Dropdown {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dropbtn {
+  background-color: var(--maincolor);
+  color: white;
+  width: 95px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.Dropbtn option {
+  background-color: white;
+  color: var(--maincolor);
+  padding-block: 12px;
+  text-transform: capitalize;
+}
+.Dropbtn option:hover {
+  background-color: var(--maincolordarkfade);
+}
